@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: grey;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+.SignUp-section{
+    padding: 100px;
+}
+    .container {
+    max-width: 500px; 
+    margin: 0 auto;
+    background-color: grey; 
+    color: #fff; 
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2 );
+}
+
+h2 {
+    margin-bottom: 20px; 
+}
+
+p {
+    margin-bottom: 30px; 
+    line-height: 1.6;
+}
+
+.credentials {
+    display: flex;
+    flex-direction: column; 
+}
+
+.credentials input {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9f9f9; 
+    color: #333;
+}
+
+.credentials input::placeholder {
+    color: grey; }
+
+.credentials button {
+    background-color: rgb(244, 141, 51);
+    border:none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.credentials button:hover {
+    background-color: #d00; 
+}
+
+input:required {
+    border-left: 5px solid rgb(255, 128, 0); 
+    padding-left: 20px; 
+}
+.login{
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 10px;
+    text-align: center;
+    transform: translateY(10px)
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Shaswat's Travel</div>
+        <nav class="nav-links">
+            <a href="project.html">Home</a>
+        </nav>
+    </header>
+    <section class="SignUp-section" id="SignUp-section">
+        <div class="container">
+            <h2>Get our exclusive offers</h2>
+            <p>Register now for special deals, travel tips, and insider information. Fill out the form below to begin your journey!</p>
+            <form class="credentials" action="server">
+                <input type="text" placeholder="Your name" required>
+                <input type="email" placeholder="Your email" required>
+                <input type="password" placeholder="Your password" required>
+                <button type="submit">Register</button>
+                <a href="login.html" class="login">Already have an account? Login</a>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

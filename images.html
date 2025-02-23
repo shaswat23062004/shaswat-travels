@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+        .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgb(194, 190, 182);
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+        .gridimage {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #ececec; 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 20px; 
+            max-width: 900px; 
+            margin: 0 auto; 
+        }
+
+        .grid-item {
+            position: relative; 
+            overflow: hidden;
+            border-radius: 10px; 
+            box-shadow: 15px 4px 8px rgba(0, 0, 0, 0.1); 
+            transition: transform 0.2s ease; 
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05); 
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            display: block;
+            border-radius: 10px; 
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            opacity: 0; 
+            transition: opacity 0.2s ease; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        .grid-item:hover .overlay {
+            opacity: 1; 
+        }
+        h1{
+            font-family: 'Poppons' , sans-serif;
+            background-color: #ececec;
+            text-align: center;
+            text-shadow:15px 4px 8px rgba(245, 106, 13, 0.259);;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Shaswat's Travel</div>
+        <nav class="nav-links">
+            <a href="project.html">Home</a>
+        </nav>
+    </header>
+    <h1>Subscribe our plan to explore more than you know make your trip unforgettable</h1>
+    <section class="gridimage">
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="italy.jpg" alt="Image 1">
+            <div class="overlay">Italy</div> </div>
+        <div class="grid-item">
+            <img src="rome.jpg" alt="Image 2">
+            <div class="overlay">Rome</div> </div>
+        <div class="grid-item">
+            <img src="bali.jpg" alt="Image 3">
+            <div class="overlay">Bali</div> </div>
+        <div class="grid-item">
+            <img src="disneyland.jpg" alt="Image 4">
+            <div class="overlay">Disney Land</div> </div>
+        <div class="grid-item">
+            <img src="florida.jpg" alt="Image 5">
+            <div class="overlay">Florida</div> </div>
+        <div class="grid-item">
+            <img src="france.jpg" alt="Image 6">
+            <div class="overlay">France</div> </div>
+        <div class="grid-item">
+            <img src="hongkong.jpg" alt="Image 7">
+            <div class="overlay">Hong Kong</div> </div>
+        <div class="grid-item">
+            <img src="iguazufalls.jpg" alt="Image 8">
+            <div class="overlay">Iguazufalls</div> </div>
+        <div class="grid-item">
+            <img src="mexico.jpg" alt="Image 9">
+            <div class="overlay">Mexico</div> </div>
+        <div class="grid-item">
+            <img src="mount everest.jpg" alt="Image 10">
+            <div class="overlay">Mount Everest</div> </div>
+        <div class="grid-item">
+            <img src="nevada.jpg" alt="Image 11">
+            <div class="overlay">nevada</div> </div>
+        <div class="grid-item">
+            <img src="south korea.jpg" alt="Image 12">
+        <div class="overlay">South Korea</div> </div>
+            <div class="grid-item">
+            <img src="thailand.jpg" alt="Image 13">
+            <div class="overlay">Thailand</div> </div>
+         <div class="grid-item">
+            <img src="turkey.jpg" alt="Image 14">
+                <div class="overlay">Turkey</div> </div>
+        <div class="grid-item">
+            <img src="uae.jpg" alt="Image 15">
+            <div class="overlay">UAE</div> </div>
+    </div>
+</section>
+</body>
+</html>
